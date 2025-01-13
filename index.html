@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bamboo Nursery</title>
+    <style>
+        /* Reset Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body and Container Styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        /* Header Section */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            padding: 10px 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        header .logo img {
+            height: 60px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #4CAF50;
+        }
+
+        .contact-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .contact-btn:hover {
+            background-color: #45a049;
+        }
+
+        /* Banner Section */
+        .banner {
+            position: relative;
+            height: 300px;
+            background: url('banner.jpg') no-repeat center center/cover;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .banner h1 {
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        .breadcrumb {
+            margin-top: 10px;
+            font-size: 1rem;
+        }
+
+        .breadcrumb a {
+            color: white;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        
+        .gallery-container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 10px;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap; /* Allows wrapping of images if space runs out */
+            gap: 15px; /* Space between images */
+            justify-content: space-between; /* Spread the images evenly */
+        }
+
+        .gallery img {
+            width: calc(25% - 15px); /* 25% of the container width minus gap */
+            height: auto;
+            border-radius: 5px; /* Rounded corners */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a slight shadow */
+            transition: transform 0.3s ease; /* Smooth hover zoom */
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05); /* Slight zoom on hover */
+        }
+
+        @media (max-width: 768px) {
+            .gallery img {
+                width: calc(50% - 15px); /* 2 images per row on smaller screens */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gallery img {
+                width: 100%; /* 1 image per row on very small screens */
+            }
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Bamboo Nursery">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact" class="contact-btn">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+<!-- Banner Section -->
+<div class="banner" style="background: url('https://www.ucost.in/blog/wp-content/uploads/2020/09/IMG-20200916-WA0005.jpg') no-repeat center center/cover; height: 300px; color: rgb(48, 231, 16); display: flex; flex-direction: column; justify-content: flex-end; align-items: flex-start; text-align: left; margin-left: 20px; padding: 20px;">
+    <h1>GALLERY</h1>
+    <p class="breadcrumb">
+        <a href="#home" style="color: white; text-decoration: none; margin: 0 5px;">Home</a> &gt; 
+        <a href="#gallery" style="color: white; text-decoration: none;">Gallery</a>
+    </p>
+</div>
+
+
+   
+
+<div class="gallery-container">
+    <div class="gallery">
+        <img src="WhatsApp Image 2025-01-08 at 5.44.58 PM (1).jpeg" alt="Image 1">
+        <img src="WhatsApp Image 2025-01-08 at 5.44.58 PM (2).jpeg" alt="Image 2">
+        <img src="WhatsApp Image 2025-01-08 at 5.44.58 PM.jpeg" alt="Image 3">
+        <img src="WhatsApp Image 2025-01-08 at 5.44.59 PM (1).jpeg" alt="Image 4">
+        <img src="WhatsApp Image 2025-01-08 at 5.44.59 PM.jpeg" alt="Image 5">
+        <img src="WhatsApp Image 2025-01-08 at 5.45.00 PM (1).jpeg" alt="Image 6">
+        
+    </div>
+</div>
+
+
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Bamboo Nursery. Designed by <a href="#">Your Name</a>.</p>
+    </footer>
+</body>
+</html>
+
